@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Employee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Register Employee</h1>
+        <form method="post" class="mx-auto" style="max-width: 400px;">{% csrf_token %}
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Designation:</label>
+                <input type="text" class="form-control" name="designation" required>
+            </div>
+            <div class="form-group">
+                <label>Department:</label>
+                <input type="text" class="form-control" name="department" required>
+            </div>
+            <div class="form-group">
+                <label>Contact:</label>
+                <input type="text" class="form-control" name="contact" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+    </div>
+</body>
+</html>
