@@ -28,3 +28,4 @@ def student_register(request):
         Student.objects.create(name=name, grade=grade, parent_contact=parent_contact, address=address)
         return redirect('student_list')
     return render(request, 'management/student_register.html')
+############################################################## heelo world
